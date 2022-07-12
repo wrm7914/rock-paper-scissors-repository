@@ -4,8 +4,7 @@ print("Rock, Paper, Scissors, Shoot!")
 
 print("WELCOME TO ROCK PAPER SCSSORS GAME")
 
-print(f"You chose: '{user_choice}'")
-print(f"You chose: '{user_choice}'")
+
 
 # USE INPUTS
 
@@ -14,6 +13,9 @@ user_choice = input("Please make a selection ('rock', 'paper', 'scissors'): ")
 
 
 # VALIDATE USER INPUTS
+print("You chose:", user_choice)
+
+print(f"You chose: '{user_choice}'")
 
 # DETERMINE THE WINNER
 

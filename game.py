@@ -11,14 +11,17 @@ print("WELCOME TO ROCK PAPER SCSSORS GAME")
 # USE INPUTS
 
 user_choice = input("Please make a selection ('rock', 'paper', 'scissors'): ")
+user_choice = user_choice.lower()
 
-
-
+valid_options = ["rock", "paper", "scissors"]
 # VALIDATE USER INPUTS
 print("You chose:", user_choice)
 
 print(f"You chose: '{user_choice}'")
-
+if user_choice not in valid_options:
+    # ALL THE STUFF INDENTED
+    print("OOPS INVALID TRY AGAIN")
+    exit()  #quit()
 # DETERMINE THE WINNER
 
 # DISPLAY RESULTS
@@ -29,7 +32,7 @@ print(f"You chose: '{user_choice}'")
 # You chose: 'rock'
 print("You chose:", user_choice)
 
-valid_options = ["rock", "paper", "scissors"]
+
 computer_choice = random.choice(valid_options)
 print("comuter chose:", computer_choice)
 
